@@ -5,13 +5,16 @@ var score = 0;
 //this shows who has the max score
 var maxScores = [
   {
-    name: "Rohit that is me",
-    score: 3,
+    name: "Rohit(that is me)",
+    score: 6,
   },
 ]
 
 // question and answers
 var questions = [{
+  question: "What is my Name? ",
+  answer: "Rohit"
+},{
   question: "Where do I live? ",
   answer: "Pune"
 }, {
@@ -19,14 +22,27 @@ var questions = [{
   answer: "Batman"
 },
 {
-  question: "Where do I work? ",
+  question: "What is my favourite snack? ",
+  answer: "Vadapav"
+},
+{
+  question: "What is the name of my startup? ",
+  answer: "3DScape India"
+},
+{
+  question: "Which company do I work in? ",
   answer: "Konecranes"
-}];
+},
+{
+  question: "What is the name of my website? ",
+  answer: "rohitgandhi.netlify.app"
+}
+];
 
 function welcomeMsg() {
  var userName = readlineSync.question("What is your name? ");
 
-  console.log("Welcome "+ userName + "!... Do you know me?");
+  console.log("Welcome "+ userName + "!... Let's see how well do you know me?");
 }
 
 
@@ -61,7 +77,7 @@ function showScores() {
 
   maxScores.map(score => console.log(score.name, " : ", score.score))
 
-  console.log("Even I dnt know myself!.... How can YOU!");
+  console.log("Even I dnt know myself well!.... How can YOU!");
 }
 
 //function call
